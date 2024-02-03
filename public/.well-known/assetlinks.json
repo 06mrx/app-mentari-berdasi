@@ -1,0 +1,10 @@
+[{
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.agrayasa.mentari",
+      "sha256_cert_fingerprints": [
+        "D2:76:84:E0:CB:59:03:FC:5B:C8:B9:08:E5:17:C5:EB:CA:30:03:74:88:3F:E3:91:6F:30:96:16:5B:B7:92:C5"
+      ]
+    }
+  }]

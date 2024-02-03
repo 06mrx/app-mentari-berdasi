@@ -1,0 +1,98 @@
+@tailwind base;
+@layer base {
+  ol,ul{
+    list-style: revert;
+    margin: revert;
+    padding: revert;
+  }
+}
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  height: 4px;
+  /* height of horizontal scrollbar ← You're missing this */
+  width: 4px;
+  /* width of vertical scrollbar */
+  /* border: 1px solid #ff1d1d; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(189, 106, 181);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #ffa7ed;
+}
+
+#nprogress .bar {
+  background: rgb(189, 106, 181) !important;
+  height: 3px !important;
+}
+
+#nprogress .peg {
+  box-shadow: 0 0 10px #FFBB00, 0 0 5px #FFBB00;
+}
+
+#nprogress .spinner-icon {
+  border-top-color: #FFBB00;
+  border-left-color: #FFBB00;
+}
+#nprogress .spinner {
+  display:none !important;
+}
+
+
+.loader {
+  display: flex;
+  font-size: 48px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: rgb(213, 18, 18);
+  position: relative;
+}
+.loader::before {
+  content: '';  
+  position: absolute;
+  left: -110px;
+  bottom: -8px;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 5px solid #fbb03a;
+  border-bottom-color: #FFF;
+  box-sizing: border-box;
+  animation: rotation 0.6s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+input.x-date{
+  position:relative;
+  overflow:hidden;
+}
+input.x-date::-webkit-calendar-picker-indicator{
+  display:block;
+  top:0;
+  left:0;
+  width: 60%;
+  /* background: #0000; */
+  /* position:absolute; */
+  transform: scale(12)
+}
+
+.leaflet-container
+{
+    
+    z-index: 10;
+}
